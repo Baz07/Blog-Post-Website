@@ -1,0 +1,6 @@
+## Main Components 
+
+from companyblog import app
+
+if __name__ == "__main__":
+    app.run(debug = True)
