@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+    #login{
+        color: white;
+    }
+
+    div{
+        margin: 20px;
+    }
+
+    .form-group{
+        margin-right: 250px;
+    }
+
+</style>
+<form class = "form-group" id="login" method="POST">
+
+    {{form.hidden_tag()}}
+
+    <div class="form-group">
+        {{form.email.label(class="form-control-label")}}
+        {{form.email(class = "form-control form-control-lg")}}
+    </div>
+    
+    <div class="form-group">
+        {{form.password.label(class="form-control-label")}}
+        {{form.password(class = "form-control form-control-lg")}}
+    </div>
+    
+    <div class="form-group">
+        {{form.submit(class = "btn btn-outline-info")}}
+    </div>
+   
+
+</form>
+
+
+{% endblock %}
